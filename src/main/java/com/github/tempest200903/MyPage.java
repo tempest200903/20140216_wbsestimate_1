@@ -10,6 +10,8 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.Model;
 
+// [2014-02-22 土 21:24] フォームをサブミットするユーザー・アクションをテストするためのテスト・ケース
+// cf. http://www.ibm.com/developerworks/jp/web/library/wa-aj-wicket/
 public class MyPage extends WebPage {
 
 	public MyPage() {
