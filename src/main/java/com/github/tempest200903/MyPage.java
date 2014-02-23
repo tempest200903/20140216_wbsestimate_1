@@ -25,7 +25,15 @@ public class MyPage extends WebPage {
 		Model<Serializable> lastNameModel = Model.of();
 		form.add(new TextField("lastName", lastNameModel));
 
-		form.add(new Button("Submit"));
+		Button button = new Button("Submit") {
+			@Override
+			public void onSubmit() {
+				super.onSubmit();
+				System.out.println("onSubmit");
+				// Person person = new Person();
+			}
+		};
+		form.add(button);
 
 		add(new Link("nextPage") {
 			public void onClick() {
