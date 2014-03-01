@@ -6,6 +6,10 @@ import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @author simei
+ *
+ */
 public class MyPageTest {
 
 	private WicketTester tester;

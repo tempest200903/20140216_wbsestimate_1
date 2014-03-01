@@ -12,6 +12,10 @@ import org.apache.wicket.model.Model;
 
 // [2014-02-22 土 21:24] フォームをサブミットするユーザー・アクションをテストするためのテスト・ケース
 // cf. http://www.ibm.com/developerworks/jp/web/library/wa-aj-wicket/
+/**
+ * @author simei
+ *
+ */
 public class MyPage extends WebPage {
 
 	public MyPage() {
@@ -30,7 +34,7 @@ public class MyPage extends WebPage {
 			public void onSubmit() {
 				super.onSubmit();
 				System.out.println("onSubmit");
-				// Person person = new Person();
+				 Person person = new Person();
 			}
 		};
 		form.add(button);
